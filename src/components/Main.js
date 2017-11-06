@@ -123,23 +123,6 @@ var ImgFigure = React.createClass({
 
 class AppComponent extends React.Component {
 
-  Constant = {
-    centerPos: {
-      left: 0,
-      right: 0
-    },
-    hPosRange: { // 水平方向的取值范围
-      leftSecX: [0, 0],
-      rightSecX: [0, 0],
-      y: [0, 0]
-    },
-    vPosRange: { // 垂直方向的取值范围
-      x: [0, 0],
-      topY: [0, 0]
-    }
-  }
-
-
   /*
    * 翻转图片
    * @param index 传入当前被执行inverse操作的图片对应的图片信息数组的index值
@@ -260,10 +243,26 @@ class AppComponent extends React.Component {
     // }
   constructor(props) {
     super(props);
+    this.state = {
+      imgsArrangeArr: []
+    }
+    this.Constant = {
+      centerPos: {
+        left: 0,
+        right: 0
+      },
+      hPosRange: { // 水平方向的取值范围
+        leftSecX: [0, 0],
+        rightSecX: [0, 0],
+        y: [0, 0]
+      },
+      vPosRange: { // 垂直方向的取值范围
+        x: [0, 0],
+        topY: [0, 0]
+      }
+    }
   }
-  state = {
-    imgsArrangeArr: []
-  }
+
   componentDidMount() {
     // 首先拿到舞台的大小
     var stageDOM = ReactDOM.findDOMNode(this.refs.stage),
