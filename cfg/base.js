@@ -17,7 +17,7 @@ module.exports = {
   output: {
     path: path.join(__dirname, '/../dist/assets'),
     filename: 'app.js',
-    publicPath: defaultSettings.publicPath
+    publicPath: './assets/' //修改在gh-pages图片路径
   },
   devServer: {
     contentBase: './src/',
