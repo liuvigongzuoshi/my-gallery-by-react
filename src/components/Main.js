@@ -293,8 +293,8 @@ class AppComponent extends React.Component {
       if (!this.state.imgsArrangeArr[index]) {
         this.state.imgsArrangeArr[index] = {
           pos: {
-            left: 0,
-            top: 0
+            left: 600,
+            top: 200
           },
           rotate: 0,
           isInverse: false,
