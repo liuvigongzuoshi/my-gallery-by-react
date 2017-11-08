@@ -19,7 +19,11 @@
     "test:watch": "karma start --autoWatch=true --singleRun=false"
   },
   "repository": "",
-  "keywords": ["gallery","react","learning"],
+  "keywords": [
+    "gallery",
+    "react",
+    "learning"
+  ],
   "author": "liuvigongzuoshi",
   "devDependencies": {
     "babel-core": "^6.0.0",
